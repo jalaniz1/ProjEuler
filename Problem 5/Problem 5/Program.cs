@@ -25,7 +25,7 @@ namespace Problem_5
             while (cnt <= max)
             {
                  
-                if(IsNbrNotEvenlyDivisibleBy(curNbr, cnt))
+                if(IsNbrNotEvenlyDivisibleBy(curNbr, divisor: cnt))
                 {
                     cnt = start;
                     curNbr++;
