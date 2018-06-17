@@ -21,10 +21,11 @@ namespace Problem_7
             else if (pos == 2)
                 return 2;
 
-            int cnt = 1, i = 3;
+            int cnt = 1, i = 2;
 
             while(cnt < pos)
             {
+                i++;
                 int divisor = (int)Math.Ceiling(Math.Sqrt(i));
                 bool isPrime = true;
                 
@@ -32,10 +33,9 @@ namespace Problem_7
 
                 if (isPrime)
                     cnt++;
-
-                i++;
             }
-            return i-1;
+
+            return i;
         }
     }
 }
