@@ -8,7 +8,7 @@ namespace Problem_7
         static void Main(string[] args)
         {
         
-            Console.WriteLine(String.Join(",", PrimeNbrAtPos(10001)));
+            Console.WriteLine(String.Join(",", PrimeNbrAtPos(3)));
             Console.ReadLine();
         }
 
@@ -16,9 +16,9 @@ namespace Problem_7
         static int PrimeNbrAtPos(int pos)
         {
 
-            if (pos < 2)
+            if (pos < 1)
                 return 0;
-            else if (pos == 2)
+            else if (pos == 1)
                 return 2;
 
             int cnt = 1, i = 2;
